@@ -1,0 +1,237 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: hsl(217, 100%, 97%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .sideBar{
+    height: 70vh;
+    width: 220px;
+    background-image: url("../../assets/bg-sidebar-desktop.svg");
+    background-size:cover;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  .formContainer{
+    display: flex;
+  }
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+  }
+
+.heading{
+  text-align: left;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+  h2 {
+    color: hsl(213, 96%, 18%);
+    font-size: 24px;
+  }
+  
+  p {
+    color: hsl(231, 11%, 63%);
+    font-size: 14px;
+  }
+  
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+  
+  input {
+    width: 70%;
+    padding: 3px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    border-color: hsl(243, 100%, 62%);
+    outline: none;
+  }
+  button {
+    background-color: hsl(243, 100%, 62%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    justify-items: end;
+  }
+
+  .step p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .step h5 {
+    margin-top: 0;
+    font-size: 12px;
+  }
+  /* .step{
+    display: flex;
+    gap: 5px;
+  }
+  .circle{
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    margin-top: 25px;
+  } */
+
+  .step {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Center items vertically */
+    gap: 5px; /* Space between the circle and info */
+    margin-top: 0px; /* Space between steps */
+    padding: 15px;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    /* background-color: aliceblue; */
+    border-radius: 50%; /* Use 50% for perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: whitesmoke;
+  }
+  
+  .info p, .info h5 {
+    margin: 0;
+    color: antiquewhite;
+  }
+  
+  .info p {
+    margin-bottom: 5px; /* Adjust the gap between p and h5 */
+  }
+  .steps{
+    gap: 100px;
+  }
+ .form{
+  margin-left: 15px;
+ }
+ .heading h2,
+.heading p {
+  margin: 0; /* Remove default margin */
+  padding: 2px; /* Remove default padding */
+}
+
+.card{
+  border: 2px solid #eeeeef;
+  /* box-shadow:5px #eeeeef; */
+  height: 110px;
+  width: 95px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  padding: 8px;
+  
+}
+.arcade-logo{
+  background-image: url(../../assets/icon-arcade.svg);
+  background-size: cover;
+  height: 29px;
+  width: 29px;
+  margin-top: 8px;
+  margin-right: 50px;
+  
+}
+
+.card:hover{
+  border-color: #4b9cdb;
+}
+.planDetails{
+  margin-right: 50px;
+  /* margin */
+}
+.cardContainer{
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  margin-top: 5px;
+  /* height: 34px; */
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    top: 2px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+  /* background-color: #2196F3; */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
